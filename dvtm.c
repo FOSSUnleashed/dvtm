@@ -241,7 +241,7 @@ static Client *lastsel = NULL;
 static Client *msel = NULL;
 static unsigned int seltags;
 static unsigned int tagset[2] = { 1, 1 };
-static bool mouse_events_enabled = ENABLE_MOUSE;
+static bool mouse_events_enabled = !ENABLE_MOUSE;
 static Layout *layout = layouts;
 static StatusBar bar = { .fd = -1, .lastpos = BAR_POS, .pos = BAR_POS, .autohide = BAR_AUTOHIDE, .h = 1 };
 static CmdFifo cmdfifo = { .fd = -1 };
